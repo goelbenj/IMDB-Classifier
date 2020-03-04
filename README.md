@@ -30,7 +30,3 @@ I used the `pyplot` library from `matplotlib` to graphically represent the loss 
 
 ## License
 This project is authored under the [MIT](https://choosealicense.com/licenses/mit/) license.
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
