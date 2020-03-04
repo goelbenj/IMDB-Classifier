@@ -4,14 +4,28 @@ This is one of my very first encounters with Machine Learning. I specifically ut
 It parses an existing dataset of highly-polarized IMDB reviews (included in the `Keras` library), and trains a binary classification neural network to identify if a review is 'negative' or 'positive'. 
 
 ## Classification Performance
-When trained on `20 epochs`, the classifier reaches a training **Loss and Validation** of 0.0053 and 0.7065 **respectively** (See below).
+### -20 epoch model-
+When trained on `20 epochs`, the classifier reaches a **Training and Validation loss** of 0.0020 and 0.7039 **respectively**. It also reaches a **Training and Validation Accuracy** of 0.9999 and 0.8689 **respectively** (See below figures).
 <p align="center">
   <img src="https://github.com/goelbenj/IMDB-Classifier/blob/master/Training%20and%20Validation%20Loss.png">
 <p>
+<p align="center">
+  <img src="https://github.com/goelbenj/IMDB-Classifier/blob/master/Training%20and%20Validation%20Accuracy.png">
+<p>
+  
 This is a perfect demonstration of `overfitting` a NN on a training dataset. This means the NN is anchoring on noise in the training dataset which is ruining the prediction loss (0.7065) on validation datasets.
 
 To prevent this, I retrained the model on `4 epochs` as compared to the previous `25 epochs`.
-
+### -4 epoch model-
+Training on `4 epochs`, the classifier reaches a **Training and Validation loss** of 0.1679 and 0.1331 **respectively**. It also reaches a **Training and Validation Accuracy** of 0.9414 and 0.9593 **respectively** (See below figures).
+<p align="center">
+  <img src="https://github.com/goelbenj/IMDB-Classifier/blob/master/Epoch4-Training%20and%20Validation%20Loss.png">
+<p>
+<p align="center">
+  <img src="https://github.com/goelbenj/IMDB-Classifier/blob/master/Epoch4-Training%20and%20Validation%20Accuracy.png">
+<p>
+  
+By lowering the number of `epochs` the model successfully combats the effects of overfitting on the training dataset and can now make **both precise and accurate predictions on unintroduced data**.
 
 ## Neural Network Model
 I chose to utilize a sequential model for my neural network (NN), as I am dealing with a binary classification problem, thus I needed a model which can possess a linear stack of layers. 
