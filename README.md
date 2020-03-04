@@ -3,7 +3,7 @@ This is one of my very first encounters with Machine Learning. I specifically ut
 
 It parses an existing dataset of highly-polarized IMDB reviews (included in the Keras library), and trains a binary classification neural network to identify if a review is 'negative' or 'positive'. 
 
-## Neural Network Model
+##### Neural Network Model
 I chose to utilize a sequential model for my neural network (NN), as I am dealing with a binary classification problem, thus I needed a model which can possess a linear stack of layers. 
 My layers are as follows: 
 1 - Dense layer (Activation function: 'relu')
