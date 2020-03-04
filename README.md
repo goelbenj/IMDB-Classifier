@@ -1,7 +1,7 @@
 # IMDB-Classifier
 This is one of my very first encounters with Machine Learning. I specifically utilized the `Keras` kernel with a `Tensorflow` backdoor to provide the framework and tools to create and train my neural network. 
 
-It parses an existing dataset of highly-polarized IMDB reviews (included in the `Keras` library), and trains a binary classification neural network to identify if a review is 'negative' or 'positive'. 
+It parses an existing dataset of highly-polarized IMDB reviews (included in the `Keras` library), and trains a binary classification neural network to identify if a review is 'negative' or 'positive' in the sense of opinion. 
 
 ## Classification Performance
 ### <20 epoch model>
