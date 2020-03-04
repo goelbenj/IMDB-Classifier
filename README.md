@@ -17,5 +17,8 @@ I chose to use the 'rmsprop' optimizer to train my network as it is general purp
 
 To counteract overfitting of my network, I utilized 4 epochs to combat this effect. 
 
-# Note:
+## Note
 I used the pyplot library from matplotlib to graphically represent the loss and accuracy of my NN between training and testing phases.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
