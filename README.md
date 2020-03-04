@@ -24,5 +24,9 @@ To counteract overfitting of my network, I utilized 4 epochs to combat this effe
 ### Note
 I used the `pyplot` library from `matplotlib` to graphically represent the loss and accuracy of my NN between training and testing phases.
 
+### Author
+* [E-mail](ben_goel@rogers.com)
+* [Github](https://github.com/goelbenj)
+
 ### License
 This project is authored under the [MIT](https://choosealicense.com/licenses/mit/) license.
