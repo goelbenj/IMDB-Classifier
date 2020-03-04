@@ -3,6 +3,16 @@ This is one of my very first encounters with Machine Learning. I specifically ut
 
 It parses an existing dataset of highly-polarized IMDB reviews (included in the `Keras` library), and trains a binary classification neural network to identify if a review is 'negative' or 'positive'. 
 
+## Classification Performance
+When trained on `20 epochs`, the classifier reaches a training **Loss and Validation** of 0.0053 and 0.7065 **respectively** (See below).
+<p align="center">
+  <img src="https://github.com/goelbenj/IMDB-Classifier/blob/master/Training%20and%20Validation%20Loss.png">
+<p>
+This is a perfect demonstration of `overfitting` a NN on a training dataset. This means the NN is anchoring on noise in the training dataset which is ruining the prediction loss (0.7065) on validation datasets.
+
+To prevent this, I retrained the model on `4 epochs` as compared to the previous `25 epochs`.
+
+
 ## Neural Network Model
 I chose to utilize a sequential model for my neural network (NN), as I am dealing with a binary classification problem, thus I needed a model which can possess a linear stack of layers. 
 My layers are as follows: 
