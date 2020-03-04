@@ -13,20 +13,20 @@ My layers are as follows:
 ```
 I utilized these the `relu` function for my first two layers as I only needed to classify the types of IMDB reviews into the two categories mentioned above. The `sigmoid` function is used in the final layer as I wish to return a scalar between 0 and 1 which encodes a probability that describes the 'confidence' of the predictions made by the NN on its training set.
 
-### Loss Function
+## Loss Function
 The loss function I used was `binary_crossentropy` as one should use in any binary classification problem.
 
-### Optimizer Choice
+## Optimizer Choice
 I chose to use the `rmsprop` optimizer to train my network as it is general purpose and easy for beginners like me to understand.
 
 To counteract overfitting of my network, I utilized 4 epochs to combat this effect. 
 
-### Note
+## Note
 I used the `pyplot` library from `matplotlib` to graphically represent the loss and accuracy of my NN between training and testing phases.
 
-### Author
+## Author
 * [E-mail](ben_goel@rogers.com)
 * [Github](https://github.com/goelbenj)
 
-### License
+## License
 This project is authored under the [MIT](https://choosealicense.com/licenses/mit/) license.
